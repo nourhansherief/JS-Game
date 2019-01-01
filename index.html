@@ -6,18 +6,26 @@
         #myCanvas {
             border: 1px solid #000000;
         }
+        img{
+            display: none;
+        }
     </style>
 </head>
 
 <body>
     <!--game screen -->
+    <img id="img-ball" src="assets/imgs/2019-01-01 (5).png">
     <canvas id="myCanvas" width="800" height="600">
-        Your browser does not support the HTML5 canvas tag.
     </canvas>
-    <script  src="src/paddle.js">
+    <script  src="paddle.js">
     </script>
-    <script  src="src/index.js">
+    <script  src="input.js">
+    </script> 
+    <script  src="ball.js">
     </script>
+    <script  src="index.js">
+    </script>
+    
     
     
 
