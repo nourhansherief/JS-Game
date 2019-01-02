@@ -28,12 +28,12 @@ class Game{
 
     update(deltaTime){
         if(this.gamestate == GAMESTATE.PAUSED) return;
-        this.gameObjects.forEach((Object) => Object.update(deltaTime));
-        this.gameObjects=this.gameObjects.filter(object => !Object.markedForDeletion );
+        this.gameObjects.forEach(object => object.update(deltaTime));
+        this.gameObjects=this.gameObjects.filter(object => !object.markedForDeletion );
     }
       
     draw(ctx){
-        this.gameObjects.forEach((Object) => Object.draw(ctx));
+        this.gameObjects.forEach(object => object.draw(ctx));
        
         if (this.gamestate === GAMESTATE.PAUSED) {
             ctx.rect(0, 0, this.gameWidth, this.gameHeight);
