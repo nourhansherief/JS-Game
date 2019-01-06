@@ -19,7 +19,7 @@ class Game{
         this.gameObjects=[];
         this.bricks =[];
         this.lives =3;
-        this.levels=[level1,level2];
+        this.levels=[level1,level2,level3];
         this.currentLevel=0;
 
     }
