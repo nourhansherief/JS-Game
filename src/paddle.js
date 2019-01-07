@@ -28,7 +28,7 @@
     }
 
     draw(ctx) {
-        ctx.fillStyle='#0ff';
+        ctx.fillStyle='#dfeb0b';
         ctx.fillRect(this.postion.x,this.postion.y,this.width,this.height);
     }
 

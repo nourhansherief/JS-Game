@@ -12,7 +12,7 @@ const GAME_HEIGHT = 600;
 
 let game = new Game(GAME_WIDTH,GAME_HEIGHT);
 
-game.start();
+
 
 ctx.clearRect(0, 0, GAME_WIDTH, GAME_HEIGHT);
 
