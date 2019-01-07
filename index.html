@@ -3,31 +3,36 @@
 
 <head>
     <style>
-        #myCanvas {
-            border: 1px solid #000000;
-        }
-        img{
+         img{
             display: none;
         }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     </style>
 </head>
 
 <body>
     <!--game screen -->
-    <img id="img-ball" src="assets/imgs/2019-01-01 (5).png">
-    <canvas id="myCanvas" width="800" height="600">
-    </canvas>
-    <script  src="paddle.js">
-    </script>
-    <script  src="input.js">
-    </script> 
-    <script  src="ball.js">
-    </script>
-    <script  src="index.js">
-    </script>
+
+   
+    <img id="img-ball" src="assets/imgs/shark4.png">
+    <img id="img-brick" src="assets/imgs/smallFish.gif">
+    <img id="img-badge1" src="assets/imgs/badge1.png">
+    <img id="img-badge2" src="assets/imgs/badge2.png">
+    <img id="img-badge3" src="assets/imgs/badge3.png">
+
+
+    <canvas id="myCanvas" width="800" height="600"></canvas>
     
-    
-    
+    <script src="src/collisionDetection.js"></script>
+    <script src="src/paddle.js"></script>
+    <script src="src/input.js"></script> 
+    <script src="src/ball.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/levels.js"></script>
+    <script src="src/brick.js"></script>
+    <script src="src/index.js"></script>
+   
 
 </body>
 
