@@ -3,29 +3,45 @@
 
 <head>
     <style>
-        #myCanvas {
-            border: 1px solid #000000;
-        }
         img{
             display: none;
-        }
+        } 
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     </style>
 </head>
 
 <body>
     <!--game screen -->
+    <ul id="lives"> </ul>
+   
+    <img id="img-ball" src="assets/imgs/shark4.png">
+    <img id="img-brick" src="assets/imgs/smallFish.gif">
+    <img id="img-badge1" src="assets/imgs/badge1.png">
+    <img id="img-badge2" src="assets/imgs/badge2.png">
+    <img id="img-badge3" src="assets/imgs/badge3.png">
+    <img id="img-map1" src="assets/imgs/map1.png">
+    <img id="img-map2" src="assets/imgs/map2.png">
+    <img id="img-map3" src="assets/imgs/map3.png">
 
-    <img id="img-ball" src="assets/imgs/2019-01-01 (5).png">
-    <img id="img-brick" src="assets/imgs/brick.png">
+<div >
+
+</div>
 
     <canvas id="myCanvas" width="800" height="600"></canvas>
-
+    
+    <script src="src/collisionDetection.js"></script>
     <script src="src/paddle.js"></script>
     <script src="src/input.js"></script> 
     <script src="src/ball.js"></script>
     <script src="src/game.js"></script>
+    <script src="src/levels.js"></script>
     <script src="src/brick.js"></script>
+    <script src="src/players.js"></script>
+   <!-- <script src="src/charcters.js"></script> -->
     <script src="src/index.js"></script>
+
+   
 
 </body>
 
