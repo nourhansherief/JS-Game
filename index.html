@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img{
+            display: none;
+        } 
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </style>
+</head>
+
+<body>
+    <!--game screen -->
+    <div id="container">
+    <a href="homepage.html" class="exit"> Exit </a>
+    <a href="homepage.html" class="player_name" id="player_name"> Fatema </a>
+    <div id="inLevel">
+        Level 
+    </div>
+
+    <ul id="lives"> </ul>
+   </div>
+
+    <!--game screen -->
+    <audio id="myAudio">
+        <source src="sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <img id="img-shark" src="assets/imgs/shark4.png">
+    <img id="img-fish" src="assets/imgs/smallFish.gif">
+    <img id="img-badge1" src="assets/imgs/badge1.png">
+    <img id="img-badge2" src="assets/imgs/badge2.png">
+    <img id="img-winner" src="assets/imgs/winner.png">
+    <img id="img-map1" src="assets/imgs/map1.png">
+    <img id="img-map2" src="assets/imgs/map2.png">
+    <img id="img-map3" src="assets/imgs/map3.png">
+    <img id="img-loser" src="assets/imgs/loser.png">
+
+<div >
+
+</div>
+
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+    
+    <script src="src/collisionDetection.js"></script>
+    <script src="src/paddle.js"></script>
+    <script src="src/input.js"></script> 
+    <script src="src/shark.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/levels.js"></script>
+    <script src="src/fish.js"></script>
+    <script src="src/players.js"></script>
+    <script src="src/index.js"></script>
+    <script>
+  
+              document.getElementById('player_name').innerHTML=sessionStorage.getItem('userName');
+
+    </script>
+
+   
+
+</body>
+
+</html>

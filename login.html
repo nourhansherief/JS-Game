@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homepage</title>
+	<meta charset="UTF-8">    
+<!--======================================ICON IN THE TAB=========================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->    
+    
+<!--=======================================ICONS IN FORM========================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('assets/imgs/bg-01.jpg');">
+            
+			<div class="wrap-login100">
+                
+				<form action="chracters.html" class="login100-form validate-form">
+                    
+					<span class="login100-form-logo">
+					
+                        <i class="fas fa-fish"></i>
+					</span>
+
+					<span class="login100-form-title">
+						Shark
+					</span>
+                    <br><br>
+					<div class="wrap-input100" data-validate = "Enter username">
+                        <input id="userName" class="input100" type="text" name="Please" placeholder="Please Enter Your Name" required>
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+                    <p id="button2" data-role="button"></p>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Start Game
+						</button>
+					</div>
+                    
+				</form>
+			</div>
+		</div>
+	</div>
+	
+<!--=======================================JS FILES========================================================-->
+
+    <script>
+        document.getElementById('userName').onkeyup = function() {
+        var userName=this.value;
+        sessionStorage.setItem('userName',userName);
+        document.getElementById('button2').innerHTML='Hello, '+ sessionStorage.getItem('userName');
+    };
+    </script>
+
+</body>
+</html>
